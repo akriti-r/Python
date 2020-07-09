@@ -1,0 +1,11 @@
+#Program to calculate Area of Circle
+
+from math import pi
+
+#Or we can set pi=3.1416 approximately
+
+radius = float(input("Enter the radius: "))
+
+area=pi*radius*radius
+
+print("Area of the circle is",format(area,'.3f'),"sq units")
