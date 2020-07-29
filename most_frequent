@@ -1,0 +1,14 @@
+def frequency_word(string):
+    d = dict()
+    for key in string:
+        d[key] = d.get(key, 0) + 1
+    return d
+
+def letters_frequency(string):
+    frequencies = frequency_word(string) 
+    frequency_list = [(freq, letter) for (letter, freq) in frequencies.iteritems()]
+    frequency_list.sort(reverse=True)
+    return [letter for freq, letter in frequency_list]
+
+string = 'mississippi'
+print letters_frequency(string)
